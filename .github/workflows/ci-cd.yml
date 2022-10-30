@@ -23,6 +23,8 @@ jobs:
                   npm run tsc:check
             - name: Tests
               run: npm run test
+            - name: Build production website
+              run: npm run build
             - name: Deploy to Netlify
               uses: actions/checkout@master
             - name: Publish
