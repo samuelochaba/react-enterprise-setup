@@ -26,9 +26,9 @@ jobs:
             - name: Build production website
               run: npm run build
             - name: Deploy to Netlify
-              uses: actions/checkout@master
+              uses: actions/checkout@main
             - name: Publish
-              uses: netlify/actions/cli@master
+              uses: netlify/actions/cli@main
               with:
                   args: deploy --dir=dist --prod
               env:
